@@ -16,5 +16,5 @@ class Solution:
             if tmp < numRows:
                 rows[tmp].append(s[i])
             else:
-                rows[1:-1][numRows-3-(tmp - numRows)].append(s[i])
+                rows[1:-1][numRows-2-1-(tmp - numRows)].append(s[i])
         return "".join(["".join(row) for row in rows])
